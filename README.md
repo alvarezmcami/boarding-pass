@@ -33,6 +33,6 @@ If you are interested in working together, you can add my profile:
 
 
 ## About Me 🚀
-I'm a Human Resources professional, and have been working in this field for over 10 years. However, I have always found the IT world very fascinating, so I took a lead of faith and started studying from scratch -first Data Analytics and now Frontend Development and, I plan to continue improving my project by studying UX/UI Design.
+I'm a Human Resources professional, and have been working in this field for over 10 years. However, I have always found the IT world very fascinating, so I took a lead of faith and started studying from scratch -first Data Analytics and now Frontend Development and, I plan to continue improving my projects by studying UX/UI Design.
 
 I believe that with passion and perseverance, I will be able to achieve my goals. 
