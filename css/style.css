@@ -73,7 +73,7 @@ html{
 .hero a:hover{
     background-color: whitesmoke;
     color: black; 
-}*/
+}
 
 
 /*sección filosofía*/
@@ -82,7 +82,6 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%;
 }
 
 .filosofia-content{
@@ -184,23 +183,22 @@ html{
     margin-bottom: 20px;
 }
 
-.card-boton{
-    padding: 5px;
-    border-radius: 5px;
-    background-color: rgba(255, 228, 196, 0.859);
+.card a{
+    font-size: 14px;
     text-decoration: none;
-    transition: 0.3s ease;
-    font-weight: bold;
-    margin-bottom: 10px;
-    font-size: 15px;
+    background-color: rgba(255, 228, 196, 0.859);
     color: black;
+    padding: 8px 15px;
+    border-radius: 10px;
+    font-weight: bold;
     box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.2);
 }
 
-.card-viajes .card .card-boton:hover{
-    background-color: #e17055;
-    color: white; 
+.card a:hover{
+background-color: #e17055;
+color: white;
 }
+
 
 /*sección turistas en BA*/
 
@@ -390,7 +388,7 @@ html{
 }
 
 .contact-form h3{
-    color:  rgb(94, 155, 164);
+    color:  #edbf42; 
     text-align: center;
 }
 
@@ -421,7 +419,7 @@ html{
     border: none;
     background: none;
     outline:none;
-    border-bottom: 1.5px solid rgb(94, 155, 164);
+    border-bottom: 1.5px solid #e8c668; 
 }
 
 .contact-form form input, 
@@ -430,7 +428,7 @@ html{
     padding: .5em;
     border: none;
     background: none;
-    border-bottom: 1.5px solid rgb(94, 155, 164);
+    border-bottom: 1.5px solid #e8c668; 
     outline: none;
     color: black; 
 }
@@ -439,12 +437,14 @@ html{
     background-color: beige;
     padding: 5px;
     border-radius: 10px;
-    color: black;
+    border-color: #e8c668;
+    color: black; 
 }
 
 .contact-form form button:hover,
 .contact-form form button:focus{
-    background:  rgb(94, 155, 164); 
+    background:  #e8c668; 
+    border-color: #e8c668;; 
     color: white; 
     outline: none;
 }   
@@ -584,6 +584,25 @@ footer p{
             margin-bottom: 30px;
     }
 }
+
+@media screen and (max-width: 530px){
+    .filosofia-content h2{
+        text-align: left;
+        margin:0; 
+        margin-bottom: 10px;
+    }
+    .filosofia-content p{
+        text-align: left;
+        margin:0; 
+    }
+    .filosofia .line{
+        text-align: left;
+        margin:0;
+        width: 78px;
+        height: 2px;
+        margin-bottom: 20px;
+}
+    }
 
 
 /*PAGINA VIAJES*/
