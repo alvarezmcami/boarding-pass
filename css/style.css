@@ -11,8 +11,6 @@ html{
     scroll-behavior: smooth;
 }
 
-/*HEADER*/
-
 body{
     font-family: 'Nunito Sans', sans-serif;
 }
@@ -157,7 +155,7 @@ html{
     box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.2);
     border-radius: 10px;
     overflow: hidden;
-    transition: transform 04.s ease;
+    transition: transform 04.s ease;/*¡OJO! ME TIRA ERROR EN SASS "message": "Invalid CSS after \"...n: transform 04\": expected expression (e.g. 1px, bold), was \".s ease;\"",*/
     background-color: white;
 }
 

@@ -1,0 +1,28 @@
+footer{
+    padding: 5px 10px 5px 10px;
+    bottom:0;
+    background-color:$color-secundario; 
+    .iconos-redes{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a{
+            color:black;
+            font-size: 1.3em;
+            transition: 0.3s ease;
+            margin: 5px; 
+            &:hover{
+                color: #e17055;
+            }
+        }
+    }
+    div{
+        p{
+            color:black;
+            font-size: 0.8em;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+    }
+}
