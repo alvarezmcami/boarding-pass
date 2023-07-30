@@ -134,3 +134,31 @@
         padding-left: 5px;
     }
 }
+
+//PAGINA TURISTAS
+
+@media screen and (max-width: 770px){
+    main .actividades .container .main-timeline-2::after {
+    left: 31px;
+    }
+
+    main .actividades .container .main-timeline-2 .timeline-2{
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+    }
+
+    main .actividades .container .main-timeline-2 .left-2::after{
+    left: 17px;
+    &::before{
+        right: auto;
+    }
+    }
+
+    main .container .main-timeline-2 .right-2{
+    left: 0%;
+    &::after{
+    left: 17px;
+        } 
+    }
+}

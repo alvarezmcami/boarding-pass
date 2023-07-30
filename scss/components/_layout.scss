@@ -321,7 +321,7 @@ main{
         .galeria-presentacion{
             width: 100vw;
             height: calc(45vh - 40px);
-            background-color: $color-secundario;
+            /*background-color: rgba(255, 228, 196, 0.237);*/
             position: relative;
             display: flex;
             flex-direction: column;
@@ -330,12 +330,24 @@ main{
             h2{
                 color: black;
             }
+            h3{
+                color:black;
+                font-size: 25px;
+                text-align: center;
+                font-style: italic;
+                z-index: 1;
+                position: relative;
+                line-height: 1.2;
+            }
             .line{
-                width: 210px;
-                height: 3px;
-                background: $color-terciario;
+                width: 800px;
+                background-color:$color-secundario; 
                 margin: 10px auto;
                 border-radius: 5px;
+                top: -28px;
+                height: 12px;
+                position: relative;
+                z-index: 0;
             }
             .nubes{
                 .nube-sol{
@@ -361,25 +373,6 @@ main{
                 }
             }
         }
-        .galeria-subt{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            h3{
-                color:$color-terciario;
-                font-size: 20px;
-                text-align: center;
-                margin-top: 35px;
-                margin-bottom: 25px;
-            }
-            span{
-                font-style: italic;
-                font-style: bold;
-                font-size: 18px;
-                color:$color-terciario;
-            }
-        }
     }
         .galeria-container{
             display: grid;
@@ -392,12 +385,13 @@ main{
             margin-right: 80px;
             .galeria-item{
                 position: relative;
+                .canyon{
+                    grid-column: 1/3;
+                }
                 .galeria-img{
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
-                    &:nth-child(2){
-                        grid-row-start: span 2;
                     }
                 }
                 .img-body{
@@ -408,15 +402,11 @@ main{
                         background: linear-gradient(rgba(255,255,255,0.5));
                         margin: 0;
                         padding: 10px;
-                        h2{
-                            font-size: 10px;
+                        font-size: 10px;
                         }
                 }
                 }
             }
-            
-        }
-    }
 
 
 // PÁGINA TURISTAS EN BA
@@ -424,8 +414,9 @@ main{
 main{
     .hero-turista{
         width: 100vw;
-        height: calc(100vh - 40px);
-        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/fondo-explora.jpg);
+        height: 50px;
+        margin-bottom: 50px;
+        margin-top: 80px;
         background-position: bottom;
         background-size: cover;
         text-align: center;
@@ -434,13 +425,68 @@ main{
         justify-content: center;
         align-items: center;
         h2{
-            color: whitesmoke;
+            color: black;
         }
-        p{
-            color: whitesmoke;
+        .line{
+            width: 150px;
+            height: 2px;
+            background: black;
+            margin-right: 0%;
+            border-radius: 5px;
+        }
+        }
+    .container{
+        .main-timeline-2{
+            position: relative;
+            &::after{
+                content: "";
+                position: absolute;
+                width: 3px;
+                background-color: $color-terciario;
+                top: 0;
+                bottom: 0;
+                left: 50%;
+                margin-left: -3px;
+                }
+            .timeline-2{
+                position: relative;
+                background-color: inherit;
+                width: 50%;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    width: 25px;
+                    height: 25px;
+                    right: -11px;
+                    background-color: $color-terciario;
+                    top: 15px;
+                    border-radius: 50%;
+                    z-index: 1;
+                    }
+                .card{
+                    .card-img-top{
+                        width:auto;
+                        height: 390px;
+                        object-fit: cover;
+                    }
+                }
+                }
+            .left-2{
+                padding: 0px 40px 20px 0px;
+                left: 0;
+            }
+            .right-2 {
+                padding: 0px 0px 20px 40px;
+                left: 50%;
+                &::after{
+                    left: -14px;
+                } 
+            }   
+            }
         }
     }
-}
+
+
 
 // PÁGINA EXPLORA - CONTACTO
 
