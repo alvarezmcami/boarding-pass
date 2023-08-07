@@ -100,6 +100,8 @@ main{
         }
         .container{
             display: flex;
+            justify-content: center;
+            align-items: center;
             .card{
                 height: 400px;
                 margin: 30px;
