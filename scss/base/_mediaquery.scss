@@ -1,70 +1,33 @@
-// MAX.WIDTH 990 // 
+
+// PAGINA INDEX //
 
 @media screen and (max-width: 990px){
-    .card-viajes{
+    main .top-5 .container{
         flex-direction: column;
     }
-}
 
-@media screen and (max-width: 910px){
-    main .baires .baires-contenido{
+    main .top-5 .container .card .img{
+        width: 650px;
+    }
+
+}   
+
+@media screen and (max-width: 1100px) {
+    top-5 .container{
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
+        margin-left: 30px;
+        margin-right: 30px;
     }
 
-    main .baires .baires-contenido .baires-texto{
-        text-align: left;
-        width: 400px;
-        padding-left: 30px;
-        margin-bottom: 35px;
-        padding-right: 0;
+    top-5 .container .card{
+        margin: 15px
     }
 }
 
-
-//acomodar la seccion de baires cuando se achica a celular// 
-
-// MAX WIDTH 450 //
-
-
-@media screen and (max-width: 470px){
-    .avion-up img{
-    width: 30px;
-    }
-
-    .iconos-redes a{
-        font-size: 1em;
-    }
-
-    .hero a{
-        font-size: 13px;
-        padding: 7px 12px;
-        border-radius: 10px;
-    }
-}
-
-@media screen and (max-width: 450px){
-    .hero-explora h2{
-        font-size: 40px;
-    }    
-} 
-
-@media screen and (max-width: 650px){
-    main .viaja-vos .viaja-content .wrap{
-        border: none;
-        box-shadow: none;
-    }
-    .avion-up img{
-        width: 40px;
-        }
-}
-
-@media screen and (max-width: 720px){
+@media screen and (max-width: 1000px){
     main .filosofia{
-        margin-top: 20px;
+        margin-left: 60px;
+        margin-right: 60px;
     }
 
     main .filosofia .filosofia-content{
@@ -90,6 +53,89 @@
 }
     }
 
+@media screen and (max-width: 910px){
+    main .baires .baires-contenido{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    main .baires .baires-contenido .baires-texto{
+        text-align: left;
+        width: 400px;
+        padding-left: 30px;
+        margin-bottom: 35px;
+        padding-right: 0;
+    }
+
+    main .baires .baires-contenido .baires-texto p{
+        padding-right: 20px;
+    }
+
+}
+
+@media screen and (max-width: 700px){
+    main .filosofia{
+        margin-left: 20px;
+        margin-right: 20px; 
+    }
+}
+
+@media screen and (max-width: 470px){
+    .avion-up img{
+    width: 30px;
+    }
+
+    .iconos-redes a{
+        font-size: 1em;
+    }
+
+    main .hero a{
+        font-size: 13px;
+        padding: 7px 12px;
+        border-radius: 10px;
+    }
+
+    main .hero h2{
+        font-size: 40px;
+    }
+}
+
+
+//PAGINA NOSOTRAS
+
+@media screen and (max-width: 950px){
+
+    main .hero-nosotras{
+        width: auto;
+        height: auto;
+    }
+
+    main .hero-nosotras .nosotras-contenido{
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    main .hero-nosotras .nosotras-contenido .nosotras-img img{
+        width: 300px;
+        height: 400px;
+        background-color: none;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 460px){
+    main .hero-nosotras .nosotras-contenido .nosotras-texto{
+        margin: auto;
+    }
+}
+
 /*PAGINA VIAJES*/
 @media screen and (max-width: 768px){
     .galeria-container{
@@ -97,13 +143,69 @@
     }
 }
 
-/*PAGINA EXPLORA-CONTACTO*/
+@media screen and (max-width: 1000px){
+    main .viajes .galeria-presentacion h3{
+        font-size: 18px;
+    }
 
-@media screen and (max-width: 713px){
-    .hero-explora h2{
-        font-size: 50px;
-    }    
-} 
+    main .viajes .galeria-presentacion .line{
+        width: 550px;
+    }
+
+    main .destinos{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    main .destinos .destinos-img img{
+        height: 400px;
+        object-fit: cover;
+    }
+
+    main .destinos-fotos .box img{
+        height: 300px;
+        object-fit: cover;
+    }
+
+}
+
+@media screen and (max-width: 950px){
+    main .viajes .galeria-presentacion .nubes .nube-1{
+        left: 90%;
+        height: 70px
+    }
+
+    main .viajes .galeria-presentacion .nubes .nube-sol{
+        left: 5%;
+        top: 5%;
+        height: 70px
+    }
+}
+
+@media screen and (max-width: 570px){
+    main .viajes .galeria-presentacion .line{
+        width: 0;
+        background-color: none;
+    }
+
+    main .destinos{
+        margin: 30px;
+    }
+
+    main .destinos-fotos{
+        margin: 50px;
+        margin-top: 20px;
+    }
+
+    main .destinos .destinos-txt p{
+        text-align: left;
+    }
+}
+
+
+/*PAGINA EXPLORA-CONTACTO*/
 
 @media screen and (max-width: 920px){
     .contact-wraper{
@@ -111,6 +213,12 @@
         width: 70%;
     }
 }
+
+@media screen and (max-width: 713px){
+    .hero-explora h2{
+        font-size: 50px;
+    }    
+} 
 
 @media screen and (max-width: 550px){
     .contact-form form{
@@ -133,7 +241,12 @@
     .contact-form label{
         padding-left: 5px;
     }
+
+    .hero-explora h2{
+        font-size: 40px;
+    }    
 }
+
 
 //PAGINA TURISTAS
 

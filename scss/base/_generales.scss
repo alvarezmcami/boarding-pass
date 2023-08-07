@@ -5,10 +5,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-html{
     scroll-behavior: smooth;
+    list-style: none;
 }
 
 body{
@@ -22,4 +20,19 @@ html{
 
 a{
     text-decoration: none;
+}
+
+.btn{
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+    padding: 2px 2px;
+    /*border-radius: 5px;*/
+    font-weight: bold;
+    box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.2);
+    border: none;
+    &:hover{
+        background-color:#e17055; 
+        color: whitesmoke;
+        }
 }

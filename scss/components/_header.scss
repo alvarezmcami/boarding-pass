@@ -1,0 +1,26 @@
+header{
+    .navbar{
+        .container-fluid{
+            a{
+                cursor: pointer;
+                transition: all .50s ease;
+                &:hover{
+                    color: $color-terciario;
+                }
+            }
+            /*div{
+                ul{
+                    li{
+                        a{
+                        cursor: pointer;
+                        transition: all .50s ease;
+                        &:hover{
+                            color: $color-terciario;
+                            }
+                        }   
+                    }
+                }
+            }*/
+        }
+    }
+}
