@@ -2,6 +2,7 @@ header{
     .navbar{
         .container-fluid{
             a{
+                font-weight: 600;
                 cursor: pointer;
                 transition: all .50s ease;
                 &:hover{

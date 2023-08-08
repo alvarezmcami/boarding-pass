@@ -10,7 +10,7 @@ main{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        h2{
+        h1{
             font-size: 50px;
             color: white;
             font-style: italic;
@@ -22,7 +22,7 @@ main{
             margin: 10px auto;
             border-radius: 5px;
         }
-        h1{
+        h2{
             font-size: 25px;
             margin-top: 10px;
             margin-bottom: 20px;
@@ -136,9 +136,10 @@ main{
                     background: $color-secundario; 
                     color: black;;
                     transition: .5s;
-                    h1{
+                    h3{
                         margin: 5px;
                         font-size: 20px;
+                        padding-bottom: 10px;
                     }
                     h2{
                         margin: 5px;
@@ -205,7 +206,9 @@ main{
                     width: 300px;
                     height: 300px;
                     box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.2);
-                    text-align: center;                    
+                    text-align: center;   
+                    object-fit: cover;
+                    border-radius: 4px;                 
                 }
             }
         }
@@ -284,13 +287,12 @@ main{
     .hero-nosotras{
         width: 100vw;
         height: calc(90vh - 40px);
-        /*background-image: linear-gradient(rgba(54, 52, 52, 0.296), rgba(54, 52, 52, 0.296)), url(../img/pies-espejo.jpg);*/
         background-position: bottom;
         background-size: cover;
+        margin-bottom: 50px;
         display: flex;
         justify-content: center;
-        align-items: center;
-        background-color: $color-primario; 
+        align-items: center; 
         .nosotras-contenido{
             background-color: transparent;
             display: flex;
@@ -324,6 +326,11 @@ main{
                         font-weight: bold;
                         font-style: italic;
                     }
+                    a{
+                        text-decoration: none;
+                        color: $color-terciario;
+                        font-weight: 700;
+                    }
                 }
             }
             }
@@ -333,13 +340,12 @@ main{
         justify-content: center;
         align-items: center;
         padding-bottom: 100px;
-        background-color: $color-primario;
         /*border-bottom: 1.5px solid $color-terciario;*/
         .newsletter-content{
             .newsletter-text{
-                h2{
+                h1{
                     color: $color-terciario;
-                    font-size: 27px;
+                    font-size: 25px;
                 }
                 p{
                     color: black;
@@ -450,8 +456,9 @@ main{
         .destinos-img{
             img{
                 width: 100%;
-                height: auto;
+                height: 600px;
                 border-radius: 10px;
+                object-fit: cover;
             }
         }
         .destinos-txt{
@@ -541,8 +548,11 @@ main{
         justify-content: center;
         align-items: center;
         line-height: 1.5;
-        h2{
+        h1{
             color: whitesmoke;
+            span{
+                font-style: italic;
+            }
         }
         .line{
             width: 150px;
@@ -619,8 +629,8 @@ main{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        h2{
-            font-size: 70px;
+        h1{
+            font-size: 60px;
             color: white;
         }
     }
@@ -630,8 +640,7 @@ main{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-bottom: 50px;
-        margin-top: 50px;
+        padding: 50px;
         .contact-wraper{
             height: 100%;
             width: 50%;

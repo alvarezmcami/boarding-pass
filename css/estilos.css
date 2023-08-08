@@ -42,6 +42,7 @@ a {
     bottom: 50%; } }
 
 header .navbar .container-fluid a {
+  font-weight: 600;
   cursor: pointer;
   transition: all .50s ease; }
   header .navbar .container-fluid a:hover {
@@ -58,7 +59,7 @@ main .hero {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  main .hero h2 {
+  main .hero h1 {
     font-size: 50px;
     color: white;
     font-style: italic; }
@@ -68,7 +69,7 @@ main .hero {
     background: beige;
     margin: 10px auto;
     border-radius: 5px; }
-  main .hero h1 {
+  main .hero h2 {
     font-size: 25px;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -165,9 +166,10 @@ main .top-5 {
         background: rgba(255, 228, 196, 0.859);
         color: black;
         transition: .5s; }
-        main .top-5 .container .card .content-card h1 {
+        main .top-5 .container .card .content-card h3 {
           margin: 5px;
-          font-size: 20px; }
+          font-size: 20px;
+          padding-bottom: 10px; }
         main .top-5 .container .card .content-card h2 {
           margin: 5px;
           font-size: 15px;
@@ -220,7 +222,9 @@ main .baires {
       width: 300px;
       height: 300px;
       box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
-      text-align: center; }
+      text-align: center;
+      object-fit: cover;
+      border-radius: 4px; }
 
 main .viaja-vos {
   width: 100%;
@@ -279,13 +283,12 @@ main .viaja-vos {
 main .hero-nosotras {
   width: 100vw;
   height: calc(90vh - 40px);
-  /*background-image: linear-gradient(rgba(54, 52, 52, 0.296), rgba(54, 52, 52, 0.296)), url(../img/pies-espejo.jpg);*/
   background-position: bottom;
   background-size: cover;
+  margin-bottom: 50px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: beige; }
+  align-items: center; }
   main .hero-nosotras .nosotras-contenido {
     background-color: transparent;
     display: flex;
@@ -315,17 +318,20 @@ main .hero-nosotras {
           color: #e17055;
           font-weight: bold;
           font-style: italic; }
+        main .hero-nosotras .nosotras-contenido .nosotras-texto p a {
+          text-decoration: none;
+          color: #e17055;
+          font-weight: 700; }
 
 main .newsletter {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-bottom: 100px;
-  background-color: beige;
   /*border-bottom: 1.5px solid $color-terciario;*/ }
-  main .newsletter .newsletter-content .newsletter-text h2 {
+  main .newsletter .newsletter-content .newsletter-text h1 {
     color: #e17055;
-    font-size: 27px; }
+    font-size: 25px; }
   main .newsletter .newsletter-content .newsletter-text p {
     color: black;
     text-align: center; }
@@ -409,8 +415,9 @@ main .destinos {
   margin-bottom: 20px; }
   main .destinos .destinos-img img {
     width: 100%;
-    height: auto;
-    border-radius: 10px; }
+    height: 600px;
+    border-radius: 10px;
+    object-fit: cover; }
   main .destinos .destinos-txt h5 {
     font-size: 25px;
     font-weight: 800;
@@ -481,8 +488,10 @@ main .hero-turista {
   justify-content: center;
   align-items: center;
   line-height: 1.5; }
-  main .hero-turista h2 {
+  main .hero-turista h1 {
     color: whitesmoke; }
+    main .hero-turista h1 span {
+      font-style: italic; }
   main .hero-turista .line {
     width: 150px;
     height: 2px;
@@ -539,8 +548,8 @@ main .hero-explora {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  main .hero-explora h2 {
-    font-size: 70px;
+  main .hero-explora h1 {
+    font-size: 60px;
     color: white; }
 
 main .contacto {
@@ -549,8 +558,7 @@ main .contacto {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
-  margin-top: 50px; }
+  padding: 50px; }
   main .contacto .contact-wraper {
     height: 100%;
     width: 50%;
@@ -700,8 +708,10 @@ footer {
     font-size: 13px;
     padding: 7px 12px;
     border-radius: 10px; }
+  main .hero h1 {
+    font-size: 40px; }
   main .hero h2 {
-    font-size: 40px; } }
+    font-size: 18px; } }
 
 @media screen and (max-width: 950px) {
   main .hero-nosotras {
@@ -710,9 +720,7 @@ footer {
   main .hero-nosotras .nosotras-contenido {
     flex-direction: column;
     width: auto;
-    height: auto;
-    margin-bottom: 30px;
-    margin-top: 30px; }
+    height: auto; }
   main .hero-nosotras .nosotras-contenido .nosotras-img img {
     width: 300px;
     height: 400px;
@@ -722,7 +730,11 @@ footer {
 
 @media screen and (max-width: 460px) {
   main .hero-nosotras .nosotras-contenido .nosotras-texto {
-    margin: auto; } }
+    margin: auto; }
+  main .newsletter .newsletter-content .newsletter-text h1 {
+    font-size: 18px; }
+  main .newsletter .newsletter-content form .btn {
+    font-size: 13px; } }
 
 /*PAGINA VIAJES*/
 @media screen and (max-width: 768px) {
@@ -768,14 +780,15 @@ footer {
     text-align: left; } }
 
 /*PAGINA EXPLORA-CONTACTO*/
-@media screen and (max-width: 920px) {
-  .contact-wraper {
-    height: 100%;
+@media screen and (max-width: 1000px) {
+  main .contacto .contact-wraper {
     width: 70%; } }
 
 @media screen and (max-width: 713px) {
-  .hero-explora h2 {
-    font-size: 50px; } }
+  main .hero-explora h1 {
+    font-size: 50px; }
+  main .contacto .contact-wraper {
+    width: 100%; } }
 
 @media screen and (max-width: 550px) {
   .contact-form form {
@@ -790,7 +803,7 @@ footer {
     font-size: 13px; }
   .contact-form label {
     padding-left: 5px; }
-  .hero-explora h2 {
+  main .hero-explora h1 {
     font-size: 40px; } }
 
 @media screen and (max-width: 770px) {

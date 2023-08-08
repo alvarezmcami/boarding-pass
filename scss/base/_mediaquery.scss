@@ -98,9 +98,14 @@
         border-radius: 10px;
     }
 
-    main .hero h2{
+    main .hero h1{
         font-size: 40px;
     }
+
+    main .hero h2{
+        font-size: 18px;
+    }
+
 }
 
 
@@ -117,8 +122,6 @@
         flex-direction: column;
         width: auto;
         height: auto;
-        margin-bottom: 30px;
-        margin-top: 30px;
     }
 
     main .hero-nosotras .nosotras-contenido .nosotras-img img{
@@ -134,7 +137,15 @@
     main .hero-nosotras .nosotras-contenido .nosotras-texto{
         margin: auto;
     }
+    main .newsletter .newsletter-content .newsletter-text h1{
+        font-size: 18px;
+    }
+    main .newsletter .newsletter-content form .btn{
+        font-size: 13px;
+    }
 }
+
+
 
 /*PAGINA VIAJES*/
 @media screen and (max-width: 768px){
@@ -207,17 +218,21 @@
 
 /*PAGINA EXPLORA-CONTACTO*/
 
-@media screen and (max-width: 920px){
-    .contact-wraper{
-        height: 100%;
+@media screen and (max-width: 1000px){
+    main .contacto .contact-wraper{
         width: 70%;
     }
+
+
 }
 
 @media screen and (max-width: 713px){
-    .hero-explora h2{
+    main .hero-explora h1{
         font-size: 50px;
-    }    
+    }  
+    main .contacto .contact-wraper{
+        width: 100%;
+    }
 } 
 
 @media screen and (max-width: 550px){
@@ -242,7 +257,7 @@
         padding-left: 5px;
     }
 
-    .hero-explora h2{
+    main .hero-explora h1{
         font-size: 40px;
     }    
 }
