@@ -196,6 +196,10 @@
 }
 
 @media screen and (max-width: 570px){
+    main .hero-viajes h1{
+        font-size: 30px;
+    }
+
     main .viajes .galeria-presentacion .line{
         width: 0;
         background-color: none;
@@ -236,21 +240,26 @@
 } 
 
 @media screen and (max-width: 550px){
-    .contact-form form{
+    main .contacto .contact-form form{
         display: flex;
         flex-direction: column;
     }
 
-    .contact-form h3{
-        font-size:20px;
+    main .contacto .contact-wraper .contact-form h2{
+        font-size: 22px;
     }
 
     .contact-form .texto-contacto{
         margin-bottom: 20px;
-        font: 20px;
+        font-size: 20px;
     }
 
-    .contact-form p{
+    main .contacto .contact-form .texto-contacto{
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    main .contacto .contact-form p{
         font-size: 13px;
     }
     .contact-form label{
@@ -258,8 +267,12 @@
     }
 
     main .hero-explora h1{
-        font-size: 40px;
+        font-size: 35px;
     }    
+
+    main .contacto .modal h3{
+        font-size: 20px;
+    }
 }
 
 
