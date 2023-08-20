@@ -719,7 +719,9 @@ footer {
     margin-bottom: 35px;
     padding-right: 0; }
   main .baires .baires-contenido .baires-texto p {
-    padding-right: 20px; } }
+    padding-right: 20px; }
+  main .viaja-vos .viaja-content .wrap p {
+    font-size: 15px; } }
 
 @media screen and (max-width: 700px) {
   main .filosofia {
