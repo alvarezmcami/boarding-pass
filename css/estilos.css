@@ -365,46 +365,47 @@ main .hero-viajes {
     color: white;
     font-size: 45px; }
 
-main .viajes .galeria-presentacion {
-  width: 100vw;
-  height: calc(55vh - 40px);
-  background-color: rgba(183, 165, 141, 0.237);
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-  main .viajes .galeria-presentacion h3 {
-    color: black;
-    font-size: 22px;
-    text-align: center;
-    font-style: italic; }
-    main .viajes .galeria-presentacion h3 span {
-      color: #e17055;
-      line-height: 1.5; }
-  main .viajes .galeria-presentacion .nubes .nube-sol {
-    position: absolute;
-    top: 15%;
-    left: 10%;
-    height: 100px; }
-  main .viajes .galeria-presentacion .nubes .nube-1 {
-    position: absolute;
-    top: 60%;
-    left: 80%;
-    height: 100px; }
-  main .viajes .galeria-presentacion .avion-animation .avion {
-    height: 80px;
-    position: absolute;
-    bottom: 0%;
-    right: -8%;
-    animation: avionAnim 15s infinite linear; }
+main .viajes {
+  margin: 10px; }
+  main .viajes .galeria-presentacion {
+    width: 100vw;
+    height: calc(55vh - 40px);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    main .viajes .galeria-presentacion h3 {
+      color: black;
+      font-size: 22px;
+      text-align: center;
+      font-style: italic; }
+      main .viajes .galeria-presentacion h3 span {
+        color: #e17055;
+        line-height: 1.5; }
+    main .viajes .galeria-presentacion .nubes .nube-sol {
+      position: absolute;
+      top: 15%;
+      left: 10%;
+      height: 100px; }
+    main .viajes .galeria-presentacion .nubes .nube-1 {
+      position: absolute;
+      top: 60%;
+      left: 80%;
+      height: 100px; }
+    main .viajes .galeria-presentacion .avion-animation .avion {
+      height: 80px;
+      position: absolute;
+      bottom: 0%;
+      right: -8%;
+      animation: avionAnim 15s infinite linear; }
 
 main .presentacion-viajes {
   display: flex;
   align-items: center;
   justify-content: center; }
   main .presentacion-viajes .viajes-content {
-    margin-bottom: 70px;
+    margin-bottom: 40px;
     margin: 20px; }
     main .presentacion-viajes .viajes-content h2 {
       font-size: 20px;
@@ -424,7 +425,7 @@ main .destinos {
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 5rem;
-  margin-top: 20px;
+  margin-top: 40px;
   margin-left: 100px;
   margin-right: 100px;
   margin-bottom: 20px; }
@@ -443,6 +444,8 @@ main .destinos {
   main .destinos .destinos-txt p {
     line-height: 30px;
     margin-bottom: 35px; }
+    main .destinos .destinos-txt p span {
+      font-weight: bold; }
 
 main .destinos-fotos {
   display: grid;
@@ -453,7 +456,7 @@ main .destinos-fotos {
   margin-top: 20px;
   margin-left: 100px;
   margin-right: 100px;
-  margin-bottom: 100px; }
+  margin-bottom: 20px; }
   main .destinos-fotos .box {
     position: relative; }
     main .destinos-fotos .box img {

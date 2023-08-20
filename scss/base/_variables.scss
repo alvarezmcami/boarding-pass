@@ -17,3 +17,16 @@ $color-terciario: #e17055;
         bottom: 50%;
     }
 }
+
+@mixin flex ($flex, $justify, $align, $direction){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+
+@mixin fuente ($fuente, $ancho, $size){
+    font-family: $fuente;
+    font-weight: $ancho;
+    font-size: $size;
+}

@@ -393,10 +393,10 @@ main{
         }
     }
     .viajes{
+        margin: 10px;
         .galeria-presentacion{
             width: 100vw;
             height: calc(55vh - 40px);
-            background-color: rgba(183, 165, 141, 0.237);
             position: relative;
             display: flex;
             flex-direction: column;
@@ -442,7 +442,7 @@ main{
         align-items: center;
         justify-content: center;
         .viajes-content{
-            margin-bottom: 70px;
+            margin-bottom: 40px;
             margin: 20px;
             h2{
                 font-size: 20px;
@@ -465,7 +465,7 @@ main{
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
         gap: 5rem;
-        margin-top: 20px;
+        margin-top: 40px;
         margin-left: 100px;
         margin-right: 100px;
         margin-bottom: 20px;
@@ -489,6 +489,9 @@ main{
             p{
                 line-height: 30px;
                 margin-bottom: 35px;
+                span{
+                    font-weight: bold;
+                }
             }
         }
     }
@@ -501,7 +504,7 @@ main{
         margin-top: 20px;
         margin-left: 100px;
         margin-right: 100px;
-        margin-bottom: 100px;
+        margin-bottom: 20px;
         .box{
             position: relative;
             img{
