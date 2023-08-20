@@ -6,12 +6,9 @@ main{
         background-position: bottom;
         background-size: cover;
         text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex (flex, column, center, center);
         h1{
-            font-size: 50px;
+            font-size: nth($font-size,10);
             color: white;
             font-style: italic;
         }
@@ -23,13 +20,13 @@ main{
             border-radius: 5px;
         }
         h2{
-            font-size: 25px;
+            font-size: nth($font-size,6);
             margin-top: 10px;
             margin-bottom: 20px;
             color: whitesmoke;
         }
         a{
-            font-size: 14px;
+            font-size: nth($font-size,2);
             text-decoration: none;
             background-color: rgba(255, 228, 196, 0.859);
             color: black;
@@ -44,16 +41,14 @@ main{
         }
     }
     .filosofia{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex (flex, row, center, center);
         margin-left: 300px;
         margin-right: 300px;
         .filosofia-content{
             margin-bottom: 70px;
             margin: 20px;
             h2{
-                font-size: 20px;
+                font-size: nth($font-size,5);
                 margin-bottom: 20px;
                 margin-top: 20px;
                 text-align: center;
@@ -80,13 +75,10 @@ main{
         background-color: rgba(255, 228, 196, 0.237);
         padding-top: 5px;
         box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.2);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        @include flex (flex, column, center, center);
         margin-bottom: 80px;
         h2{
-            font-size: 20px;
+            font-size: nth($font-size,5);
             margin-bottom: 10px;
             margin-top: 10px;
             text-align: center;
@@ -99,9 +91,7 @@ main{
             border-radius: 5px;
         }
         .container{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex (flex, row, center, center);
             .card{
                 height: 400px;
                 margin: 30px;
@@ -138,12 +128,12 @@ main{
                     transition: .5s;
                     h3{
                         margin: 5px;
-                        font-size: 20px;
+                        font-size: nth($font-size,5);
                         padding-bottom: 10px;
                     }
                     h2{
                         margin: 5px;
-                        font-size: 15px;
+                        font-size: nth($font-size,3);
                         text-align: left;
                     }
                     p{
@@ -156,19 +146,15 @@ main{
         }
         }
     .baires{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex (flex, row, center, center);
         margin-bottom: 80px;        
         .baires-contenido{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;          
+            @include flex (flex, row, space-between, center);         
             .baires-texto{
                 width: 600px;
                 padding-right: 60px; 
                 h2{
-                    font-size: 20px;
+                    font-size: nth($font-size,5);
                     margin-bottom: 15px;
                 }
                 .line{
@@ -187,14 +173,8 @@ main{
                     }
                 }
                 a{
-                    font-size: 14px;
-                    text-decoration: none;
-                    background-color: rgba(255, 228, 196, 0.859);
-                    color: black;
-                    padding: 5px 10px;
-                    border-radius: 5px;
-                    font-weight: bold;
-                    box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.2);
+                    font-size: nth($font-size,2);
+                    @extend %boton;
                     &:hover{
                         background-color:#e17055; 
                         color: white;
@@ -227,10 +207,7 @@ main{
             width: 100%;
             padding: 50px;
             color: whitesmoke;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            @include flex (flex, column, center, center);
             text-align: center;
             .wrap{
                 border: 1.5px solid beige;
@@ -238,24 +215,18 @@ main{
                 box-shadow: 0 0 25px #222;
                 border-radius: 15px;
                 h2{
-                    font-size: 30px;
+                    font-size: nth($font-size,8);
                     margin-bottom: 20px;
                     margin-top: 20px;
                 }
                 p{
                     margin-bottom: 30px;
                     font-weight: bold;
-                    font-size: 20px;
+                    font-size: nth($font-size,5);
                 }
                 a{
-                    font-size: 14px;
-                    text-decoration: none;
-                    background-color: rgba(255, 228, 196, 0.859);
-                    color: black;
-                    padding: 5px 10px;
-                    border-radius: 5px;
-                    font-weight: bold;
-                    box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.2);
+                    font-size: nth($font-size,2);
+                    @extend %boton;
                     &:hover{
                         background-color: #e17055;
                         color: white;
@@ -290,14 +261,10 @@ main{
         background-position: bottom;
         background-size: cover;
         margin-bottom: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center; 
+        @include flex (flex, row, center, center);
         .nosotras-contenido{
             background-color: transparent;
-            display: flex;
-            justify-content: space-between;
-            align-items: center; 
+            @include flex (flex, row, space-between, center);
             padding: 30px;
             margin: auto;
             background-color: $color-primario;
@@ -317,11 +284,11 @@ main{
                 text-align: center;
                 margin-left: 20px;
                 p{
-                    font-size: 15px;
+                    font-size: nth($font-size,3);
                     margin: 10px;
                     color: black;
                     span{
-                        font-size: 18px;
+                        font-size: nth($font-size,4);
                         color: #e17055;
                         font-weight: bold;
                         font-style: italic;
@@ -336,16 +303,14 @@ main{
             }
         }
     .newsletter{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex (flex, row, center, center);
         padding-bottom: 100px;
         /*border-bottom: 1.5px solid $color-terciario;*/
         .newsletter-content{
             .newsletter-text{
                 h1{
                     color: $color-terciario;
-                    font-size: 25px;
+                    font-size: nth($font-size,6);
                 }
                 p{
                     color: black;
@@ -359,7 +324,7 @@ main{
                 input:first-child{
                     padding: 3px;
                     background-color: $color-secundario;
-                    font-size: 13px;
+                    font-size: nth($font-size,2);
                     color: black;
                     border-radius: 3px;
                     border: none;
@@ -383,13 +348,10 @@ main{
         background-position: bottom;
         background-size: cover;
         text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex (flex, column, center, center);
         h1{
             color: white;
-            font-size: 45px;
+            font-size: nth($font-size,9);
         }
     }
     .viajes{
@@ -398,13 +360,10 @@ main{
             width: 100vw;
             height: calc(55vh - 40px);
             position: relative;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            @include flex (flex, column, center, center);
             h3{
                 color:black;
-                font-size: 22px;
+                font-size: nth($font-size,5);
                 text-align: center;
                 font-style: italic;
                 span{
@@ -438,14 +397,12 @@ main{
         }
     }
     .presentacion-viajes{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex (flex, row, center, center);
         .viajes-content{
             margin-bottom: 40px;
             margin: 20px;
             h2{
-                font-size: 20px;
+                font-size: nth($font-size,5);
                 margin-bottom: 20px;
                 margin-top: 20px;
                 text-align: center;
@@ -479,7 +436,7 @@ main{
         }
         .destinos-txt{
             h5{
-                font-size: 25px;
+                font-size: nth($font-size,6);
                 font-weight: 800;
                 color: $color-terciario;
                 text-transform: uppercase;
@@ -525,7 +482,7 @@ main{
                 position: absolute;
                 left: 25px;
                 bottom: 65px;
-                font-size: 18px;
+                font-size: nth($font-size,4);
                 font-weight: 500;
                 color: whitesmoke;
             }
@@ -533,7 +490,7 @@ main{
                 position: absolute;
                 left: 25px;
                 bottom: 40px;
-                font-size: 20px;
+                font-size: nth($font-size,5);
                 font-weight: 700;
                 color: whitesmoke;
             }
@@ -541,7 +498,7 @@ main{
                 right: 25px;
                 top: 20px;
                 position: absolute;
-                font-size: 30px;
+                font-size: nth($font-size,8);
                 color: whitesmoke;
                 &:hover{
                     color: $color-terciario;
@@ -562,10 +519,7 @@ main{
         background-position: bottom;
         background-size: cover;
         text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex (flex, column, center, center);
         line-height: 1.5;
         h1{
             color: whitesmoke;
@@ -643,22 +597,17 @@ main{
         background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/fondo-explora.jpg);
         background-position: bottom;
         background-size: cover;
+        font-size: nth($font-size,10);
         text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex (flex, column, center, center);
         h1{
-            font-size: 45px;
+            font-size: nth($font-size,9);
             color: white;
         }
     }
     .contacto{
         width: 100%;
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex (flex, column, center, center);
         padding: 50px;
         .contact-wraper{
             height: 100%;
@@ -672,7 +621,7 @@ main{
             .modal{
                 .modal-content{
                     .modal-title{
-                        font-size: 10px;
+                        font-size: nth($font-size,1);
                     }
                 }
             }
@@ -683,7 +632,7 @@ main{
                 h2{
                     color:  #edbf42; 
                     text-align: center;
-                    font-size: 28px;
+                    font-size: nth($font-size,7);
                 }
                 .texto-contacto{
                     text-align: center;
