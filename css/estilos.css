@@ -47,6 +47,8 @@ header .navbar .container-fluid a {
   transition: all .50s ease; }
   header .navbar .container-fluid a:hover {
     color: #e17055; }
+  header .navbar .container-fluid a img {
+    height: 45px; }
 
 main .hero {
   width: 100vw;
